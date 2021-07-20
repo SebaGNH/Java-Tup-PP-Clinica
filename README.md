@@ -1,4 +1,4 @@
-## Primer Parcial
+## Primer Parcial Clinica
 
 1. Desarrolle la clase Prestacion que contiene los siguiente atributos: codigo (int), descripcion (String), monto (float).
 
