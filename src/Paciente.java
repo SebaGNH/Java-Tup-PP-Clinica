@@ -51,7 +51,7 @@ public class Paciente {
         this.prestacion = prestacion;
     }
     public Prestacion getPrestacion(){
-        return this.prestacion;
+        return this.prestacion; 
     }
     public void cantidadSesiones(int cantidadSesiones){
         this.cantidadSesiones = cantidadSesiones;
