@@ -57,6 +57,32 @@ public class Paciente {
         return cantidadSesiones;
     }
 
+    //6. Desarrolle en la clase Clinica un método que devuelva el el paciente que más pagó por sus sesiones.
+
+    public float getMontoPagadoPorPaciente(){
+        float montoPagado = this.prestacion.getMonto() * this.cantidadSesiones;
+        float montoDescuento = (montoPagado * this.coberturaObraSocial) / 100;
+        float montoFinal = montoPagado - montoDescuento;
+        return montoFinal;
+    }
+
+    public Paciente(){
+        this.dni = 0;
+        this.nombre = "";
+        this.apellido = "";
+        this.coberturaObraSocial = 0;
+        this.prestacion = null;
+        this.cantidadSesiones = 0;
+    }
+
+    //// 7. Desarrolle en la clase Clinica un método que devuelva el monto promedio de las bonificaciones de las obras sociales.
+
+    public float getMontoBonificacion(){
+        float montoSesiones = prestacion.getMonto() * this.cantidadSesiones;
+        float montoDescuento = (this.coberturaObraSocial * montoSesiones) / 100;
+        return montoDescuento;
+    }
+
 
 
 }
