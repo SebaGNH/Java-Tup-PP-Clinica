@@ -20,7 +20,7 @@ public class Paciente {
         this.cantidadSesiones = cantidadSesiones;
     }
     public String toString(){
-        return "Dni: " + this.dni + ", Nombre: " + this.nombre + ", Apellido: " + this.apellido + ", Cobertura Obra Social: " + this.coberturaObraSocial + this.prestacion+ ", Cantidad de Sesiones: " + this.cantidadSesiones;
+        return "Dni: " + this.dni + ", Nombre: " + this.nombre + ", Apellido: " + this.apellido + ", Cobertura Obra Social: " + this.coberturaObraSocial + this.prestacion.getDescripcion()+ ", Cantidad de Sesiones: " + this.cantidadSesiones;
     }
 
     public void setDni(int dni){
